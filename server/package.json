@@ -1,0 +1,27 @@
+{
+  "name": "search-recommend-web",
+  "version": "1.0.0",
+  "description": "This site serves as the front-end for a search-recommendation site.",
+  "main": "recommendation.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gyangle/search-recommend-web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gyangle/search-recommend-web/issues"
+  },
+  "homepage": "https://github.com/Gyangle/search-recommend-web#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs": "*",
+    "mongoose": "^5.12.12"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "^6.9.6"
+  }
+}

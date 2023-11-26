@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>University Search & Recommend</title>
+</head>
+
+<body>
+  <header class="App-header">
+    <h1>Smart University Search</h1>
+    <p>Search and explore the top world universities</p>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-9" id="left-side">
+        <div class="container">
+          <form>
+            <div class="form-group">
+              <label id="username-label">Who are you?</label>
+              <input type="text" id="username-input" class="form-control"  aria-describedby="emailHelp"
+                placeholder="Enter your name ..." >
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label id="query-label">Which university?</label>
+              <input type="text" id="query-input" class="form-control" placeholder="Enter university name ..." >
+            </div>
+            <button type="submit" id="submit-btn" class="btn btn-primary">Search</button>
+            <button type="submit" id="clear" class="btn btn-warning">Cold Start</button>
+          </form>
+        </div>
+        <div class="container" id="result">
+          <p>
+            Demo: explanation of the collection, indexing process, retrieval model(s), features, scenario walk-throughs. [10 points]
+            Time management [5 points]
+            Professionalism [5 points]
+          </p>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <div id = "recommendation">
+          <div class="container" id = "recommendation-1">
+            <h6>Trending Universities</h6>
+            <p id="occrance">
+              <div id="occrance-group"></div>
+            </p>
+          </div>
+          <div class="container" id="recomm-container">
+            <!-- <h4>Query Recommendation</h2> -->
+            <!-- Query recommendation placeholder -->
+            <h6>Users Who Searched This Query Also Searched</h6>
+            <ul id="recomm-list" style="list-style: none;">
+              <li class="recomm-item">Below are placeholders. Search to refresh</li>
+              <li class="recomm-item">UW</li>
+              <li class="recomm-item">UW Seattle</li>
+              <li class="recomm-item">UW Bothell</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </div>
+
+    
+
+  </div>
+  <script src="./recommendation.js" defer></script>
+</body>
+
+</html>

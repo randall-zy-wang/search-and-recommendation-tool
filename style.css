@@ -1,0 +1,53 @@
+.App-header {
+    background-color: #282c34;
+    min-height: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  .App-header > h1, .App-header > p {
+    margin: 5px;
+  }
+
+  .row {
+    margin-top: 1.5em;
+  }
+
+  #username-input, #query-input{
+    width: 60%;
+  }
+
+  #clear {
+    margin-left: 20px;
+  }
+
+
+#recomm-container {
+  visibility:hidden;
+  margin-top: 2em;
+}
+
+p{
+  margin:0;
+}
+
+#result {
+  margin-top: 30px;
+}
+
+
+#recommendation-1 {
+  border:0.5px solid grey;
+}
+
+
+/*  */
+
+#recomm-list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
